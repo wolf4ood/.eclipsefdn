@@ -91,15 +91,6 @@ orgs.newOrg('eclipse-edc') {
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
-        orgs.newRepoSecret('AZ_STORAGE_KEY') {
-          value: "********",
-        },
-        orgs.newRepoSecret('AZ_STORAGE_SAS') {
-          value: "********",
-        },
-        orgs.newRepoSecret('COSMOS_KEY') {
-          value: "********",
-        },
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
         },
@@ -107,12 +98,6 @@ orgs.newOrg('eclipse-edc') {
           value: "********",
         },
         orgs.newRepoSecret('EF_JENKINS_USER') {
-          value: "********",
-        },
-        orgs.newRepoSecret('S3_ACCESS_KEY_ID') {
-          value: "********",
-        },
-        orgs.newRepoSecret('S3_SECRET_ACCESS_KEY') {
           value: "********",
         },
       ],
@@ -429,9 +414,6 @@ orgs.newOrg('eclipse-edc') {
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
-        orgs.newRepoSecret('COSMOS_KEY') {
-          value: "********",
-        },
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
         },
