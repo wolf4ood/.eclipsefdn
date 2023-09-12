@@ -49,8 +49,6 @@ orgs.newOrg('eclipse-edc') {
       allow_update_branch: false,
       has_discussions: true,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -65,8 +63,6 @@ orgs.newOrg('eclipse-edc') {
       allow_update_branch: false,
       description: "EDC Presentations and Working Documents",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -86,8 +82,6 @@ orgs.newOrg('eclipse-edc') {
       has_discussions: true,
       has_wiki: false,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -118,8 +112,6 @@ orgs.newOrg('eclipse-edc') {
       description: "DataDashboard",
       has_discussions: true,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -135,8 +127,6 @@ orgs.newOrg('eclipse-edc') {
       description: "FederatedCatalog",
       has_discussions: true,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -157,8 +147,6 @@ orgs.newOrg('eclipse-edc') {
       allow_update_branch: false,
       has_discussions: true,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -182,15 +170,11 @@ orgs.newOrg('eclipse-edc') {
     orgs.newRepo('IDS-CodeGeneration') {
       allow_update_branch: false,
       description: "IDS-CodeGeneration",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('IDS-Serializer') {
       allow_update_branch: false,
       description: "IDS-Serializer",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('IdentityHub') {
@@ -200,8 +184,6 @@ orgs.newOrg('eclipse-edc') {
       description: "IdentityHub",
       has_discussions: true,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -222,8 +204,6 @@ orgs.newOrg('eclipse-edc') {
       allow_update_branch: false,
       has_discussions: true,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -238,8 +218,6 @@ orgs.newOrg('eclipse-edc') {
       allow_update_branch: false,
       description: "Guidance on documentation, scripts and integration steps on using the EDC project results",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -297,8 +275,6 @@ orgs.newOrg('eclipse-edc') {
       description: "EDC publications",
       has_discussions: true,
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -314,8 +290,6 @@ orgs.newOrg('eclipse-edc') {
       description: "RegistrationService",
       has_discussions: true,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -336,8 +310,6 @@ orgs.newOrg('eclipse-edc') {
       allow_update_branch: false,
       has_discussions: true,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -352,8 +324,6 @@ orgs.newOrg('eclipse-edc') {
       allow_update_branch: false,
       description: "Runtime-Metamodel",
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -373,8 +343,6 @@ orgs.newOrg('eclipse-edc') {
       allow_rebase_merge: false,
       allow_update_branch: false,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -388,8 +356,6 @@ orgs.newOrg('eclipse-edc') {
       allow_rebase_merge: false,
       allow_update_branch: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -409,8 +375,6 @@ orgs.newOrg('eclipse-edc') {
       allow_rebase_merge: false,
       allow_update_branch: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -433,8 +397,6 @@ orgs.newOrg('eclipse-edc') {
       allow_rebase_merge: false,
       allow_update_branch: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -455,8 +417,6 @@ orgs.newOrg('eclipse-edc') {
       allow_update_branch: false,
       has_wiki: false,
       is_template: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -472,8 +432,6 @@ orgs.newOrg('eclipse-edc') {
       has_discussions: true,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -491,8 +449,6 @@ orgs.newOrg('eclipse-edc') {
       gh_pages_source_branch: "main",
       gh_pages_source_path: "/docs",
       homepage: "",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       secrets: [
@@ -514,8 +470,6 @@ orgs.newOrg('eclipse-edc') {
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       environments: [
         orgs.newEnvironment('github-pages') {
