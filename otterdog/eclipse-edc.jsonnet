@@ -20,6 +20,9 @@ orgs.newOrg('eclipse-edc') {
     },
   },
   secrets+: [
+    orgs.newOrgSecret('ORGANIZATION_PROJECT') {
+      value: "********",
+    },
     orgs.newOrgSecret('ORG_GPG_PASSPHRASE') {
       value: "pass:bots/technology.edc/gpg/passphrase",
     },
@@ -32,21 +35,18 @@ orgs.newOrg('eclipse-edc') {
     orgs.newOrgSecret('ORG_OSSRH_USERNAME') {
       value: "pass:bots/technology.edc/oss.sonatype.org/username",
     },
-    orgs.newOrgSecret('ORGANIZATION_PROJECT') {
-      value: "********",
-    },
     orgs.newOrgSecret('SWAGGERHUB_TOKEN') {
       value: "********",
     },
     orgs.newOrgSecret('SWAGGERHUB_USER') {
       value: "********",
     },
-],
+  ],
   _repositories+:: [
     orgs.newRepo('.github') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_discussions: true,
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
@@ -58,9 +58,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Collateral') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "EDC Presentations and Working Documents",
       homepage: "",
       squash_merge_commit_title: "PR_TITLE",
@@ -72,9 +72,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Connector') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "EDC core services including data plane and control plane",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
@@ -106,9 +106,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('DataDashboard') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "DataDashboard",
       has_discussions: true,
       has_wiki: false,
@@ -121,9 +121,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('FederatedCatalog') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "FederatedCatalog",
       has_discussions: true,
       has_wiki: false,
@@ -142,9 +142,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('GradlePlugins') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_discussions: true,
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
@@ -168,19 +168,23 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('IDS-CodeGeneration') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "IDS-CodeGeneration",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('IDS-Serializer') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "IDS-Serializer",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('IdentityHub') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "IdentityHub",
       has_discussions: true,
       has_wiki: false,
@@ -199,9 +203,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('JenkinsPipelines') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_discussions: true,
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
@@ -213,9 +217,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('MinimumViableDataspace') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Guidance on documentation, scripts and integration steps on using the EDC project results",
       has_discussions: true,
       squash_merge_commit_title: "PR_TITLE",
@@ -269,9 +273,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Publications') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "EDC publications",
       has_discussions: true,
       homepage: "",
@@ -284,9 +288,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('RegistrationService') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "RegistrationService",
       has_discussions: true,
       has_wiki: false,
@@ -305,9 +309,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Release') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_discussions: true,
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
@@ -319,9 +323,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Runtime-Metamodel') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "Runtime-Metamodel",
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
@@ -339,9 +343,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Samples') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_discussions: true,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
@@ -352,9 +356,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Technology-Aws') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
@@ -371,9 +375,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Technology-Azure') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
@@ -393,9 +397,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Technology-Gcp') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
@@ -412,9 +416,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('Template-Basic') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_wiki: false,
       is_template: true,
       squash_merge_commit_title: "PR_TITLE",
@@ -426,9 +430,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('TrustFrameworkAdoption') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       has_discussions: true,
       has_projects: false,
       has_wiki: false,
@@ -441,9 +445,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('docs') {
-      allow_merge_commit: false,
       allow_rebase_merge: false,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       description: "EDC documentation",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "main",
@@ -466,7 +470,9 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('json-ld-context') {
+      allow_merge_commit: true,
       allow_update_branch: false,
+      delete_branch_on_merge: false,
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
