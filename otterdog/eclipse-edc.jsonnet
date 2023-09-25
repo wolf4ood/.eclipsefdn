@@ -23,6 +23,12 @@ orgs.newOrg('eclipse-edc') {
     orgs.newOrgSecret('ORGANIZATION_PROJECT') {
       value: "********",
     },
+    orgs.newOrgSecret('ORG_GITHUB_BOT_TOKEN') {
+      value: "pass:bots/technology.edc/api-token"
+    },
+    orgs.newOrgSecret('ORG_GITHUB_BOT_USER') {
+      value: "pass:bots/technology.edc/username"
+    },
     orgs.newOrgSecret('ORG_GPG_PASSPHRASE') {
       value: "pass:bots/technology.edc/gpg/passphrase",
     },
