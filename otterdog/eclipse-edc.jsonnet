@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-edc') {
   settings+: {
     billing_email: "wemaster@eclipse.org",
-    default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     discussion_source_repository: "eclipse-edc/.github",
@@ -24,10 +23,10 @@ orgs.newOrg('eclipse-edc') {
       value: "********",
     },
     orgs.newOrgSecret('ORG_GITHUB_BOT_TOKEN') {
-      value: "pass:bots/technology.edc/github.com/api-token"
+      value: "pass:bots/technology.edc/github.com/api-token",
     },
     orgs.newOrgSecret('ORG_GITHUB_BOT_USER') {
-      value: "pass:bots/technology.edc/github.com/username"
+      value: "pass:bots/technology.edc/github.com/username",
     },
     orgs.newOrgSecret('ORG_GPG_PASSPHRASE') {
       value: "pass:bots/technology.edc/gpg/passphrase",
@@ -57,6 +56,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -71,6 +73,9 @@ orgs.newOrg('eclipse-edc') {
       homepage: "",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -90,6 +95,9 @@ orgs.newOrg('eclipse-edc') {
       homepage: "",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -120,6 +128,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -135,6 +146,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -155,6 +169,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -179,6 +196,9 @@ orgs.newOrg('eclipse-edc') {
       delete_branch_on_merge: false,
       description: "IDS-CodeGeneration",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('IDS-Serializer') {
       allow_merge_commit: true,
@@ -186,6 +206,9 @@ orgs.newOrg('eclipse-edc') {
       delete_branch_on_merge: false,
       description: "IDS-Serializer",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('IdentityHub') {
       allow_rebase_merge: false,
@@ -196,6 +219,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -216,6 +242,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -230,6 +259,9 @@ orgs.newOrg('eclipse-edc') {
       has_discussions: true,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('ACR_NAME') {
           value: "********",
@@ -287,6 +319,9 @@ orgs.newOrg('eclipse-edc') {
       homepage: "",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -302,6 +337,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -322,6 +360,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -336,6 +377,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -355,6 +399,9 @@ orgs.newOrg('eclipse-edc') {
       has_discussions: true,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -368,6 +415,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -387,6 +437,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -401,6 +454,9 @@ orgs.newOrg('eclipse-edc') {
           value: "********",
         },
       ],
+      environments: [
+        orgs.newEnvironment('Azure-dev'),
+      ],
     },
     orgs.newRepo('Technology-Gcp') {
       allow_rebase_merge: false,
@@ -409,6 +465,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -429,6 +488,9 @@ orgs.newOrg('eclipse-edc') {
       is_template: true,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -444,6 +506,9 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -461,6 +526,9 @@ orgs.newOrg('eclipse-edc') {
       homepage: "",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
@@ -483,6 +551,9 @@ orgs.newOrg('eclipse-edc') {
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
