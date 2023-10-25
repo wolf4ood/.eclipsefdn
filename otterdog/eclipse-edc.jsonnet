@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-edc') {
   settings+: {
-    billing_email: "wemaster@eclipse.org",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     discussion_source_repository: "eclipse-edc/.github",
