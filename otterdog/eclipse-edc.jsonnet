@@ -6,7 +6,6 @@ orgs.newOrg('eclipse-edc') {
     description: "",
     discussion_source_repository: "eclipse-edc/.github",
     has_discussions: true,
-    members_can_change_project_visibility: false,
     name: "Eclipse Dataspace Components",
     packages_containers_internal: false,
     packages_containers_public: false,
