@@ -185,26 +185,6 @@ orgs.newOrg('eclipse-edc') {
         },
       ],
     },
-    orgs.newRepo('IDS-CodeGeneration') {
-      allow_merge_commit: true,
-      allow_update_branch: false,
-      delete_branch_on_merge: false,
-      description: "IDS-CodeGeneration",
-      web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "write",
-      },
-    },
-    orgs.newRepo('IDS-Serializer') {
-      allow_merge_commit: true,
-      allow_update_branch: false,
-      delete_branch_on_merge: false,
-      description: "IDS-Serializer",
-      web_commit_signoff_required: false,
-      workflows+: {
-        default_workflow_permissions: "write",
-      },
-    },
     orgs.newRepo('IdentityHub') {
       allow_rebase_merge: false,
       allow_update_branch: false,
