@@ -462,6 +462,7 @@ orgs.newOrg('eclipse-edc') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       has_discussions: true,
+      has_projects: false,
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
