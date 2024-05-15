@@ -95,13 +95,7 @@ orgs.newOrg('eclipse-edc') {
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
-          value: "********",
-        },
+        }
       ],
       environments: [
         orgs.newEnvironment('Azure-dev'),
@@ -146,13 +140,7 @@ orgs.newOrg('eclipse-edc') {
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
-          value: "********",
-        },
+        }
       ],
     },
     orgs.newRepo('GradlePlugins') {
@@ -168,12 +156,6 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
           value: "********",
         },
         orgs.newRepoSecret('GRADLE_PUBLISH_KEY') {
@@ -199,13 +181,7 @@ orgs.newOrg('eclipse-edc') {
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
-          value: "********",
-        },
+        }
       ],
     },
     orgs.newRepo('JenkinsPipelines') {
@@ -317,13 +293,7 @@ orgs.newOrg('eclipse-edc') {
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
-          value: "********",
-        },
+        }
       ],
     },
     orgs.newRepo('Release') {
@@ -357,13 +327,7 @@ orgs.newOrg('eclipse-edc') {
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
-          value: "********",
-        },
+        }
       ],
     },
     orgs.newRepo('Samples') {
@@ -396,13 +360,7 @@ orgs.newOrg('eclipse-edc') {
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
-          value: "********",
-        },
+        }
       ],
     },
     orgs.newRepo('Technology-Azure') {
@@ -418,12 +376,6 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
           value: "********",
         },
         orgs.newRepoSecret('PG_CONNECTION_STRING') {
@@ -448,13 +400,7 @@ orgs.newOrg('eclipse-edc') {
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
           value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_TOKEN') {
-          value: "********",
-        },
-        orgs.newRepoSecret('EF_JENKINS_USER') {
-          value: "********",
-        },
+        }
       ],
     },
     orgs.newRepo('Technology-HuaweiCloud') {
