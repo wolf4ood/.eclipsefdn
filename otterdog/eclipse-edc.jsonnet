@@ -414,16 +414,16 @@ orgs.newOrg('eclipse-edc') {
       web_commit_signoff_required: false,
       secrets+: [
         orgs.newRepoSecret('ACCESS_KEY') {
-          value: "bots/technology.edc/cloud.huawei.com/access-key",
+          value: "pass:bots/technology.edc/cloud.huawei.com/access-key",
         },
         orgs.newRepoSecret('SECRET_KEY') {
-          value: "bots/technology.edc/cloud.huawei.com/secret-key",
+          value: "pass:bots/technology.edc/cloud.huawei.com/secret-key",
         },
         orgs.newRepoSecret('OBS_ACCESS_KEY_ID') {
-          value: "bots/technology.edc/cloud.huawei.com/obs-access-key-id",
+          value: "pass:bots/technology.edc/cloud.huawei.com/obs-access-key-id",
         },
         orgs.newRepoSecret('OBS_SECRET_ACCESS_KEY') {
-          value: "bots/technology.edc/cloud.huawei.com/obs-secret-access-key",
+          value: "pass:bots/technology.edc/cloud.huawei.com/obs-secret-access-key",
         },
       ],
       workflows+: {
