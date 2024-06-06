@@ -279,6 +279,7 @@ orgs.newOrg('eclipse-edc') {
       ],
     },
     orgs.newRepo('RegistrationService') {
+      archived: true,
       allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: false,
