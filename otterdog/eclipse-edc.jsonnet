@@ -55,7 +55,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
     },
@@ -72,7 +72,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
     },
@@ -94,7 +94,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         }
       ],
       environments: [
@@ -121,7 +121,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
     },
@@ -139,7 +139,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         }
       ],
     },
@@ -156,7 +156,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
         orgs.newRepoSecret('GRADLE_PUBLISH_KEY') {
           value: "********",
@@ -180,7 +180,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         }
       ],
     },
@@ -197,7 +197,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
     },
@@ -244,7 +244,7 @@ orgs.newOrg('eclipse-edc') {
           value: "********",
         },
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
         orgs.newRepoSecret('REGISTRY_SHARE') {
           value: "********",
@@ -274,7 +274,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
     },
@@ -292,7 +292,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         }
       ],
     },
@@ -309,7 +309,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
     },
@@ -326,7 +326,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         }
       ],
     },
@@ -342,7 +342,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
     },
@@ -359,7 +359,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         }
       ],
     },
@@ -376,7 +376,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
         orgs.newRepoSecret('PG_CONNECTION_STRING') {
           value: "********",
@@ -399,7 +399,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         }
       ],
     },
@@ -425,6 +425,9 @@ orgs.newOrg('eclipse-edc') {
         orgs.newRepoSecret('OBS_SECRET_ACCESS_KEY') {
           value: "pass:bots/technology.edc/cloud.huawei.com/obs-secret-access-key",
         },
+        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
+          value: "pass:bots/technology.edc/discord/webhook-url",
+        },
       ],
       workflows+: {
         default_workflow_permissions: "read",
@@ -443,7 +446,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
     },
@@ -461,7 +464,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
     },
@@ -481,7 +484,7 @@ orgs.newOrg('eclipse-edc') {
       },
       secrets: [
         orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "********",
+          value: "pass:bots/technology.edc/discord/webhook-url",
         },
       ],
       environments: [
