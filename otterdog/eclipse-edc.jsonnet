@@ -412,6 +412,20 @@ orgs.newOrg('eclipse-edc') {
       has_wiki: false,
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
+      secrets+: [
+        orgs.newRepoSecret('ACCESS_KEY') {
+          value: "bots/technology.edc/cloud.huawei.com/access-key",
+        },
+        orgs.newRepoSecret('SECRET_KEY') {
+          value: "bots/technology.edc/cloud.huawei.com/secret-key",
+        },
+        orgs.newRepoSecret('OBS_ACCESS_KEY_ID') {
+          value: "bots/technology.edc/cloud.huawei.com/obs-access-key-id",
+        },
+        orgs.newRepoSecret('OBS_SECRET_ACCESS_KEY') {
+          value: "bots/technology.edc/cloud.huawei.com/obs-secret-access-key",
+        },
+      ],
       workflows+: {
         default_workflow_permissions: "read",
       },
