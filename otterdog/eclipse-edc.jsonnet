@@ -29,10 +29,10 @@ orgs.newOrg('eclipse-edc') {
       value: "pass:bots/technology.edc/gpg/secret-subkeys.asc",
     },
     orgs.newOrgSecret('ORG_OSSRH_PASSWORD') {
-      value: "pass:bots/technology.edc/oss.sonatype.org/password",
+      value: "pass:bots/technology.edc/oss.sonatype.org/gh-token-password",
     },
     orgs.newOrgSecret('ORG_OSSRH_USERNAME') {
-      value: "pass:bots/technology.edc/oss.sonatype.org/username",
+      value: "pass:bots/technology.edc/oss.sonatype.org/gh-token-username",
     },
     orgs.newOrgSecret('SWAGGERHUB_TOKEN') {
       value: "********",
