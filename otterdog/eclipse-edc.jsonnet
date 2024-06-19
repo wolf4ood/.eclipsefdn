@@ -132,7 +132,9 @@ orgs.newOrg('eclipse-edc') {
       description: "FederatedCatalog",
       has_discussions: true,
       has_wiki: false,
-      gh_pages_build_type: "workflow",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_path: "/",
+      gh_pages_source_branch: "gh-pages",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
@@ -174,7 +176,9 @@ orgs.newOrg('eclipse-edc') {
       description: "IdentityHub",
       has_discussions: true,
       has_wiki: false,
-      gh_pages_build_type: "workflow",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh-pages",
+      gh_pages_source_path: "/",
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
       workflows+: {
