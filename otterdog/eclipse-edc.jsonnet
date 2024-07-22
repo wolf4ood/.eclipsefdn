@@ -496,7 +496,7 @@ orgs.newOrg('eclipse-edc') {
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
-            "main"
+            "gh-pages"
           ],
           deployment_branch_policy: "selected",
         },
