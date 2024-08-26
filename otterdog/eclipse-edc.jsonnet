@@ -15,6 +15,12 @@ orgs.newOrg('eclipse-edc') {
     orgs.newOrgSecret('ORGANIZATION_PROJECT') {
       value: "********",
     },
+    orgs.newOrgSecret('DISCORD_GITHUB_CI_WEBHOOK') {
+      value: "pass:bots/technology.edc/discord/ci-webhook-url",
+    },
+    orgs.newOrgSecret('DISCORD_GITHUB_WEBHOOK') {
+      value: "pass:bots/technology.edc/discord/webhook-url",
+    },
     orgs.newOrgSecret('ORG_GITHUB_BOT_TOKEN') {
       value: "pass:bots/technology.edc/github.com/api-token",
     },
@@ -52,11 +58,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
     },
     orgs.newRepo('Collateral') {
       allow_rebase_merge: false,
@@ -69,11 +70,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
     },
     orgs.newRepo('Connector') {
       allow_rebase_merge: false,
@@ -91,11 +87,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        }
-      ],
       environments: [
         orgs.newEnvironment('Azure-dev'),
         orgs.newEnvironment('github-pages') {
@@ -118,11 +109,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
     },
     orgs.newRepo('FederatedCatalog') {
       allow_rebase_merge: false,
@@ -139,11 +125,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        }
-      ],
     },
     orgs.newRepo('GradlePlugins') {
       allow_rebase_merge: false,
@@ -157,9 +138,6 @@ orgs.newOrg('eclipse-edc') {
         default_workflow_permissions: "write",
       },
       secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
         orgs.newRepoSecret('GRADLE_PUBLISH_KEY') {
           value: "********",
         },
@@ -183,11 +161,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        }
-      ],
     },
     orgs.newRepo('JenkinsPipelines') {
       allow_rebase_merge: false,
@@ -200,11 +173,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
     },
     orgs.newRepo('MinimumViableDataspace') {
       allow_rebase_merge: false,
@@ -248,9 +216,6 @@ orgs.newOrg('eclipse-edc') {
         orgs.newRepoSecret('COMMON_RESOURCE_GROUP_LOCATION') {
           value: "********",
         },
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
         orgs.newRepoSecret('REGISTRY_SHARE') {
           value: "********",
         },
@@ -277,11 +242,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
     },
     orgs.newRepo('RegistrationService') {
       archived: true,
@@ -296,11 +256,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        }
-      ],
     },
     orgs.newRepo('Release') {
       allow_rebase_merge: false,
@@ -313,11 +268,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
     },
     orgs.newRepo('Runtime-Metamodel') {
       allow_rebase_merge: false,
@@ -330,11 +280,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        }
-      ],
     },
     orgs.newRepo('Samples') {
       allow_rebase_merge: false,
@@ -346,11 +291,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
     },
     orgs.newRepo('Technology-Aws') {
       allow_rebase_merge: false,
@@ -363,11 +303,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        }
-      ],
     },
     orgs.newRepo('Technology-Azure') {
       allow_rebase_merge: false,
@@ -381,9 +316,6 @@ orgs.newOrg('eclipse-edc') {
         default_workflow_permissions: "write",
       },
       secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
         orgs.newRepoSecret('PG_CONNECTION_STRING') {
           value: "********",
         },
@@ -403,11 +335,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        }
-      ],
     },
     orgs.newRepo('Technology-HuaweiCloud') {
       allow_rebase_merge: false,
@@ -431,9 +358,6 @@ orgs.newOrg('eclipse-edc') {
         orgs.newRepoSecret('OBS_SECRET_ACCESS_KEY') {
           value: "pass:bots/technology.edc/cloud.huawei.com/obs-secret-access-key",
         },
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
       ],
       workflows+: {
         default_workflow_permissions: "read",
@@ -450,11 +374,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
     },
     orgs.newRepo('TrustFrameworkAdoption') {
       allow_rebase_merge: false,
@@ -468,11 +387,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
     },
     orgs.newRepo('docs') {
       allow_rebase_merge: false,
@@ -486,11 +400,6 @@ orgs.newOrg('eclipse-edc') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      secrets: [
-        orgs.newRepoSecret('DISCORD_WEBHOOK_GITHUB') {
-          value: "pass:bots/technology.edc/discord/webhook-url",
-        },
-      ],
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
