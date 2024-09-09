@@ -430,5 +430,26 @@ orgs.newOrg('eclipse-edc') {
         },
       ],
     },
+    orgs.newRepo('eclipse-edc.github.io') {
+      allow_rebase_merge: false,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "EDC documentation website",
+      gh_pages_build_type: "workflow",
+      homepage: "https://eclipse-edc.github.io",
+      squash_merge_commit_title: "PR_TITLE",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "main"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
+    },
   ],
 }
