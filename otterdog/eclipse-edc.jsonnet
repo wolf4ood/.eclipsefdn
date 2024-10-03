@@ -452,5 +452,16 @@ orgs.newOrg('eclipse-edc') {
         },
       ],
     },
+    orgs.newRepo('CompatibilityTests') {
+      allow_rebase_merge: false,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      has_discussions: true,
+      squash_merge_commit_title: "PR_TITLE",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
   ],
 }
