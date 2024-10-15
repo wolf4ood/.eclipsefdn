@@ -21,6 +21,9 @@ orgs.newOrg('eclipse-edc') {
     orgs.newOrgSecret('DISCORD_GITHUB_WEBHOOK') {
       value: "pass:bots/technology.edc/discord/webhook-url",
     },
+    orgs.newOrgSecret('GITLAB_API_TOKEN') {
+      value: "pass:bots/technology.edc/gitlab.eclipse.org/api-token",
+    },    
     orgs.newOrgSecret('ORG_GITHUB_BOT_TOKEN') {
       value: "pass:bots/technology.edc/github.com/api-token",
     },
