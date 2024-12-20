@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-edc') {
+orgs.newOrg('technology.edc', 'eclipse-edc') {
   settings+: {
     description: "",
     discussion_source_repository: "eclipse-edc/.github",
