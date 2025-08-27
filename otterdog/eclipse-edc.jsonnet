@@ -471,6 +471,7 @@ orgs.newOrg('technology.edc', 'eclipse-edc') {
       ],
     },
     orgs.newRepo('Template-Basic') {
+      archived: true,
       allow_rebase_merge: false,
       allow_update_branch: false,
       delete_branch_on_merge: false,
