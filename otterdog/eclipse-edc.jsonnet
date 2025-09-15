@@ -567,5 +567,30 @@ orgs.newOrg('technology.edc', 'eclipse-edc') {
       squash_merge_commit_title: "PR_TITLE",
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('Virtual-Connector') {
+      allow_rebase_merge: false,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      description: "EDC core components and services for a virtualized control plane",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh-pages",
+      gh_pages_source_path: "/",
+      has_discussions: true,
+      has_wiki: false,
+      homepage: "",
+      squash_merge_commit_title: "PR_TITLE",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "read",
+      },
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
+        },
+      ],
+    }
   ],
 }
